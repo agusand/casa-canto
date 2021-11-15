@@ -1,10 +1,13 @@
 import Logo from "./Logo";
+
+import { useMenuContext } from "../../contexts/MenuContext";
 const NavBarFooter = () => {
+	const { navBarClassActive } = useMenuContext();
 	return (
 		<footer>
 			<div className="container">
 				<div className="logoContainer">
-					<Logo />
+					{navBarClassActive || <Logo />}
 					<div className="contactContainer workshopCardLegend">
 						<p className="contactText">999999999999999</p>
 						<p className="contactText">correo@gmail.com</p>
