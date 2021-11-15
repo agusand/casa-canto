@@ -80,6 +80,12 @@ const AppLayout = ({ children }) => {
 					href="/assets/icons/favicon/favicon-16x16.png"
 				/>
 				<link rel="manifest" href="/assets/icons/favicon/manifest.json" />
+				<link
+					rel="sitemap"
+					type="application/xml"
+					title="Sitemap"
+					href="/sitemap.xml"
+				/>
 				<meta name="msapplication-TileColor" content="#ffffff" />
 				<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 				<meta name="theme-color" content="#ffffff" />

@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://casa-canto.vercel.app/sitemap.xml
