@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { useCallback } from "react";
 
+import NavBarFooter from "./NavBarFooter";
+
 import { useMenuContext } from "../../contexts/MenuContext";
 
 const NavBar = () => {
@@ -15,7 +17,7 @@ const NavBar = () => {
 		setOpen(!open);
 	}, [open, setNavBarClassActive, setOpen]);
 	return (
-		<nav className={`${navBarClassActive}`}>
+		<nav onClick={navBarClickHandler} className={`${navBarClassActive}`}>
 			<ul>
 				<li>
 					<Link href="/nosotros">
@@ -33,6 +35,7 @@ const NavBar = () => {
 					</Link>
 				</li>
 			</ul>
+			<NavBarFooter />
 			<style jsx>
 				{`
 					nav {
@@ -65,40 +68,55 @@ const NavBar = () => {
 						background-position: 50% 90%;
 					}
 
-					@media (max-width: 700px) {
+					@media (max-width: 500px) {
 						nav {
 							display: none;
-							background: $background;
+							background: black;
 							position: fixed;
-							top: calc(4.4rem + 4.5vh);
+							top: 0;
 							left: 0;
 							width: 100%;
 							min-width: 100%;
-							height: calc(100vh - 4.5vh - 4.4rem);
+							height: 100vh;
 							transition: opacity 0.3s;
 							opacity: 0;
 							z-index: 0;
-							justify-content: center;
+							justify-content: flex-start;
 							flex-direction: column;
 							align-items: center;
 						}
 
 						.navbar--init {
-							display: block;
 							display: flex;
 						}
 
 						.navbar--open {
 							display: flex;
 							opacity: 1;
-							z-index: 6;
+							z-index: 4;
 						}
 
 						.navbar--closing {
-							display: block;
 							display: flex;
 							opacity: 0;
-							z-index: 6;
+							z-index: 4;
+						}
+
+						ul {
+							margin-top: 7vh;
+							height: 63vh;
+							position: relative;
+							display: flex;
+							flex-direction: column;
+							text-align: left;
+						}
+
+						li {
+							width: 70%;
+						}
+
+						a {
+							font-size: 2rem;
 						}
 					}
 				`}

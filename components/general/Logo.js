@@ -9,6 +9,8 @@ const Logo = () => {
 			</Link>
 			<style jsx>{`
 				figure {
+					position: relative;
+					z-index: 6;
 					height: 90%;
 				}
 

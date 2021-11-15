@@ -60,6 +60,7 @@ const MainBanner = () => {
 				}
 				@media (max-width: 600px) {
 					section {
+						margin-top: 7vh;
 						height: 40vh;
 					}
 					figure {

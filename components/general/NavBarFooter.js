@@ -1,14 +1,10 @@
 import Logo from "./Logo";
-
-import { useMenuContext } from "../../contexts/MenuContext";
-
-const Footer = () => {
-	const { navBarClassActive } = useMenuContext();
+const NavBarFooter = () => {
 	return (
 		<footer>
 			<div className="container">
 				<div className="logoContainer">
-					{navBarClassActive || <Logo />}
+					<Logo />
 					<div className="contactContainer workshopCardLegend">
 						<p className="contactText">999999999999999</p>
 						<p className="contactText">correo@gmail.com</p>
@@ -37,15 +33,19 @@ const Footer = () => {
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					height: 17vh;
+					height: 30vh;
+					flex-direction: column;
 				}
 
 				.container {
-					width: 80%;
 					display: flex;
-					justify-content: space-between;
 					align-items: center;
 					height: 7vh;
+					width: 50%;
+					height: 100%;
+					flex-direction: column;
+					justify-content: center;
+					gap: 1vh;
 				}
 
 				.logoContainer {
@@ -53,7 +53,9 @@ const Footer = () => {
 					justify-content: space-between;
 					align-items: center;
 					gap: 4vw;
-					height: 70%;
+					flex-direction: column;
+					text-align: center;
+					height: 37%;
 				}
 
 				.containerContainer {
@@ -72,6 +74,7 @@ const Footer = () => {
 					display: flex;
 					flex-direction: column;
 					gap: 1vh;
+					align-items: center;
 				}
 
 				.socialTitle {
@@ -98,28 +101,9 @@ const Footer = () => {
 					width: 5vh;
 				}
 
-				@media (max-width: 500px) {
+				@media (min-width: 500px) {
 					footer {
-						height: 30vh;
-						flex-direction: column;
-					}
-
-					.container {
-						width: 50%;
-						height: 100%;
-						flex-direction: column;
-						justify-content: center;
-						gap: 1vh;
-					}
-
-					.logoContainer {
-						flex-direction: column;
-						text-align: center;
-						height: 37%;
-					}
-
-					.socialContainer {
-						align-items: center;
+						display: none;
 					}
 				}
 			`}</style>
@@ -127,4 +111,4 @@ const Footer = () => {
 	);
 };
 
-export default Footer;
+export default NavBarFooter;

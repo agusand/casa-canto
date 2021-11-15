@@ -1,7 +1,6 @@
 import BurguerMenu from "./BurguerMenu";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
-
 const Header = () => {
 	return (
 		<header>
@@ -19,7 +18,7 @@ const Header = () => {
 					width: 100vw;
 					height: 7vh;
 					background: transparent;
-					z-index: 3;
+					z-index: 5;
 				}
 
 				div {
@@ -30,7 +29,12 @@ const Header = () => {
 					height: 80%;
 				}
 
-				@media (max-width: 700px) {
+				@media (max-width: 500px) {
+					header {
+						background: black;
+						position: fixed;
+						top: 0;
+					}
 					div {
 						flex-direction: row-reverse;
 						height: 70%;

@@ -31,6 +31,8 @@ const BurguerMenu = () => {
 				div {
 					height: 70%;
 					margin-right: 1rem;
+					position: relative;
+					z-index: 6;
 				}
 
 				img {
