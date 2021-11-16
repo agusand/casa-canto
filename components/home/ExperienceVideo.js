@@ -17,27 +17,25 @@ const ExperienceVideo = ({ title, href, image }) => {
 			</Link>
 			<style jsx>{`
 				div {
-					width: 100%;
 					height: 100%;
 					border: solid 2px white;
 				}
 
 				a {
-					width: 100%;
 					height: 100%;
 					display: block;
 				}
 
 				figure {
 					position: relative;
-					width: 100%;
 					height: 100%;
 					overflow: hidden;
 				}
 
 				.thumbnail {
 					height: 100%;
-					object-fit: contain;
+					width: 100%;
+					object-fit: cover;
 				}
 
 				.playIcon {
