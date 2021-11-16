@@ -40,13 +40,23 @@ const ContactForm = () => {
 	return (
 		<form onSubmit={formSubmitHandler}>
 			<fieldset className="whiteBackgroundTextBody">
-				<input type="text" name="name" placeholder="Nombre:" />
-				<input type="text" name="lastname" placeholder="Apellido:" />
-				<input type="text" name="country" placeholder="País de residencia:" />
-				<input type="text" name="city" placeholder="Ciudad:" />
-				<input type="text" name="phone" placeholder="Teléfono:" />
-				<input type="text" name="email" placeholder="Correo electrónico:" />
-				<textarea placeholder="Mensaje:" name="message" />
+				<input type="text" name="name" required placeholder="Nombre:" />
+				<input type="text" name="lastname" required placeholder="Apellido:" />
+				<input
+					type="text"
+					name="country"
+					required
+					placeholder="País de residencia:"
+				/>
+				<input type="text" name="city" required placeholder="Ciudad:" />
+				<input type="text" name="phone" required placeholder="Teléfono:" />
+				<input
+					type="text"
+					name="email"
+					required
+					placeholder="Correo electrónico:"
+				/>
+				<textarea placeholder="Mensaje:" required name="message" />
 			</fieldset>
 			<div>
 				<button type="submit" className="buttonFont">

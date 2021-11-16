@@ -88,7 +88,7 @@ const Footer = () => {
 
 				img {
 					width: 100%;
-					hieght: 100%;
+					height: 100%;
 					object-fit: container;
 				}
 

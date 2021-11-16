@@ -81,13 +81,14 @@ const Carousel = () => {
 			</div>
 			<style jsx>{`
 				.carousel {
-					height: 65%;
+					min-height: 65%;
 					display: flex;
 					justify-content: center;
 					flex-direction: column;
 					align-items: center;
 					overflow-x: hidden;
 					width: 100%;
+					gap: 2rem;
 				}
 
 				.cardsContainer {

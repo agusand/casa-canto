@@ -24,7 +24,7 @@ const TeacherCard = ({ title, subtitle, text, image, instagram }) => {
 					width: calc(${100 / slides.length}% - 3rem);
 					background: black;
 					color: white;
-					height: 85%;
+					min-height: 85%;
 					padding: 0 2.5rem;
 					display: flex;
 					flex-direction: column;

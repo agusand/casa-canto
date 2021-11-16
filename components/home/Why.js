@@ -43,8 +43,7 @@ const Why = () => {
 
 				@media (max-width: 600px) {
 					article {
-                        padding: 8vh 0
-						gap: 8vh;
+						padding: 8vh 0;
 					}
 					h2 {
 						font-size: 2.5rem;

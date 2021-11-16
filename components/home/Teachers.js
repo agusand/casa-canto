@@ -11,7 +11,7 @@ const Teachers = () => {
 				section {
 					background-image: url("/assets/images/background/nuestros-profesores.webp");
 					background-size: cover;
-					height: 100vh;
+					height: 110vh;
 				}
 
 				article {
