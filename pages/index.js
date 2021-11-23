@@ -1,4 +1,4 @@
-import MainBanner from "../components/home/MainBanner";
+import Banner from "../components/general/Banner";
 import Teachers from "../components/home/Teachers";
 import Why from "../components/home/Why";
 import Workshops from "../components/home/Workshops";
@@ -9,7 +9,11 @@ import { CarouselContextProvider } from "../contexts/CarouselContext";
 export default function Home() {
 	return (
 		<div>
-			<MainBanner />
+			<Banner
+				title="Hacé música y sentite como en casa"
+				message="Hola"
+				slug="home-banner"
+			/>
 			<Why />
 			<CarouselContextProvider>
 				<Teachers />

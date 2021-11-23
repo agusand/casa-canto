@@ -7,23 +7,25 @@ const NavBarFooter = () => {
 		<footer>
 			<div className="container">
 				<div className="logoContainer">
-					{navBarClassActive || <Logo />}
+					{navBarClassActive ? <Logo /> : null}
 					<div className="contactContainer workshopCardLegend">
-						<p className="contactText">999999999999999</p>
-						<p className="contactText">correo@gmail.com</p>
-						<p className="contactText">Dirección</p>
+						<p className="contactText">3513403843</p>
+						<p className="contactText">casacanto1070@gmail.com</p>
+						<p className="contactText">
+							Caseros 1070 - Alberdi - Córdoba Capital
+						</p>
 					</div>
 				</div>
 				<div className="socialContainer">
 					<p className="socialTitle workshopCardLegend">Contactanos en:</p>
 					<div className="iconsContainer">
-						<a href="">
+						<a href="https://www.instagram.com/casa.canto/">
 							<img src="/assets/icons/instagram.svg" alt="instagram" />
 						</a>
-						<a href="">
+						<a href="https://www.youtube.com/channel/UCofTWHiX5aIdin2AJ8UaO6w">
 							<img src="/assets/icons/youtube.svg" alt="youtube" />
 						</a>
-						<a href="">
+						<a href="https://www.facebook.com/CasaCantoTalleresMusicales">
 							<img src="/assets/icons/facebook.svg" alt="facebook" />
 						</a>
 					</div>
@@ -38,6 +40,7 @@ const NavBarFooter = () => {
 					align-items: center;
 					height: 30vh;
 					flex-direction: column;
+					width: 100vw;
 				}
 
 				.container {
@@ -95,7 +98,7 @@ const NavBarFooter = () => {
 				img {
 					width: 100%;
 					height: 100%;
-					object-fit: container;
+					object-fit: contain;
 				}
 
 				a {

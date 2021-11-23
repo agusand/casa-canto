@@ -17,8 +17,8 @@ class Mailer {
 	}
 
 	sendEmail = async ({
-		from = "amandreacchi@gmail.com",
-		to = "amandreacchi@gmail.com",
+		from = "casacantomaildelivery@gmail.com",
+		to = "casacanto1070@gmail.com",
 		subject,
 		text = "",
 		html = "",
@@ -52,7 +52,10 @@ class Mailer {
 	};
 }
 
-const mailService = new Mailer("amandreacchi@gmail.com", "giladon95");
+const mailService = new Mailer(
+	"casacantomaildelivery@gmail.com",
+	"ccmdelivery2021"
+);
 
 export default async function handler(req, res) {
 	try {

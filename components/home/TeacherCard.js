@@ -1,6 +1,6 @@
 import { useCarouselContext } from "../../contexts/CarouselContext";
 
-const TeacherCard = ({ title, subtitle, text, image, instagram }) => {
+const TeacherCard = ({ title, subtitle, text, image }) => {
 	const { slides } = useCarouselContext();
 	return (
 		<div className="card">
@@ -13,9 +13,6 @@ const TeacherCard = ({ title, subtitle, text, image, instagram }) => {
 					<p className="cardSubtitle workshopCardLegend">{subtitle}</p>
 				</div>
 				<p className="text whiteBackgroundTextBody">{text}</p>
-				<p className="text whiteBackgroundTextBody">
-					<a href={`https://www.instagram.com/${instagram}/`}>@{instagram}</a>
-				</p>
 			</div>
 			<style jsx>{`
 				.card {

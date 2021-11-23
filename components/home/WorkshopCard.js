@@ -19,12 +19,14 @@ const WorkshopCard = ({ title, difficult, image, slug }) => {
 					width: 100%;
 					height: 100%;
 					background: white;
+					border-radius: 0 0 16px 16px;
 				}
 
 				a {
 					display: block;
 					width: 100%;
 					height: 100%;
+					border-radius: 0 0 16px 16px;
 				}
 
 				figure {
@@ -47,6 +49,11 @@ const WorkshopCard = ({ title, difficult, image, slug }) => {
 
 				h3 {
 					font-size: 1.2rem;
+				}
+
+				a:hover {
+					color: white;
+					background: var(--grey-background);
 				}
 
 				p {

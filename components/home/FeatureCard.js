@@ -1,20 +1,34 @@
-const FeatureCard = ({ title, text, reverse = false, image }) => {
+const FeatureCard = ({
+	title,
+	text,
+	reverse = false,
+	image,
+	height,
+	about = false,
+}) => {
 	return (
 		<div>
 			<figure>
 				<img src={image} alt={title} />
 			</figure>
 			<div className="text">
-				<h3 className="subtitle">{title}</h3>
+				{title ? <h3 className="subtitle">{title}</h3> : null}
 				<p className="whiteBackgroundTextBody">{text}</p>
 			</div>
 			<style jsx>{`
 				div {
 					display: flex;
 					width: max(40rem, 85%);
-					height: 30vh;
+					min-height: ${height}vh;
 					align-items: center;
+					gap: 1rem;
 					flex-direction: ${reverse ? "row-reverse" : "row"};
+					${about && "justify-content: space-between;"}
+				}
+
+				h3 {
+					${about &&
+					"font-size: 3rem; width: 50%; line-height: 1.2em; margin-bottom: 1rem;"}
 				}
 
 				figure {
@@ -25,7 +39,7 @@ const FeatureCard = ({ title, text, reverse = false, image }) => {
 				img {
 					height: 100%;
 					max-width: 100%;
-					object-fit: contain;
+					object-fit: cover;
 				}
 
 				.text {

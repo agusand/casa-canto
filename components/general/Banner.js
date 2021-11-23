@@ -1,16 +1,16 @@
 import Link from "next/link";
 
-const MainBanner = () => {
+const Banner = ({ title, message, slug, page = false }) => {
 	return (
 		<section>
 			<article>
 				<figure></figure>
 				<div>
-					<h1 className="title blackBackgroundTitle">
-						Hacé música y sentite como en casa
-					</h1>
-					<Link href="/">
-						<a>
+					<h1 className="title blackBackgroundTitle">{title}</h1>
+					<Link
+						href={`https://api.whatsapp.com/send?text=${message}&phone=+5493513403843`}
+					>
+						<a target="_blank">
 							<button className="buttonFont">Promociones</button>
 						</a>
 					</Link>
@@ -19,6 +19,10 @@ const MainBanner = () => {
 			<style jsx>{`
 				section {
 					height: 70vh;
+				}
+
+				h1 {
+					${page && "text-transform: uppercase; width: 60%"}
 				}
 
 				article {
@@ -35,7 +39,7 @@ const MainBanner = () => {
 					background-repeat: no-repeat;
 					background-position: center;
 					background-size: cover;
-					background-image: url(/assets/images/background/portada-banner.webp);
+					background-image: url(/assets/images/banners/${slug}.webp);
 				}
 
 				img {
@@ -64,11 +68,11 @@ const MainBanner = () => {
 						height: 40vh;
 					}
 					figure {
-						height: 47vh;
-						background-position: right;
-						width: 150vw;
-						right: -50%;
+						height: 41vh;
+						top: 6vh;
+						right: 0;
 						left: unset;
+						background-image: url(/assets/images/banners/${slug}-mobile.webp);
 					}
 
 					button {
@@ -78,10 +82,14 @@ const MainBanner = () => {
 					.title {
 						font-size: 2rem;
 					}
+
+					h1 {
+						${page && "width: 100%"}
+					}
 				}
 			`}</style>
 		</section>
 	);
 };
 
-export default MainBanner;
+export default Banner;

@@ -1,9 +1,15 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import axios from "axios";
 
 const ContactForm = () => {
+	const [isError, setIsError] = useState(false);
+	const [isOk, setIsOk] = useState(false);
+
 	const formSubmitHandler = useCallback(async (event) => {
 		try {
+			setIsError(false);
+			setIsOk(false);
+
 			event.preventDefault();
 
 			const formData = new FormData(event.target);
@@ -20,7 +26,7 @@ const ContactForm = () => {
 
 			const htmlTemplate = `
 			<p><b>Nombre y apellido:</b> ${usefulFormData.name} ${usefulFormData.lastname}</p>
-			<p><b>País de residencia:</b>${usefulFormData.country}</p>
+			<p><b>País de residencia:</b> ${usefulFormData.country}</p>
 			<p><b>Ciudad:</b> ${usefulFormData.city}</p>
 			<p><b>Teléfono:</b> ${usefulFormData.phone}</p>
 			<p><b>E-mail:</b> ${usefulFormData.email}</p>
@@ -31,8 +37,20 @@ const ContactForm = () => {
 				html: htmlTemplate,
 			});
 
-			response.status === 200 && event.target.reset();
+			if (response.status === 200) {
+				event.target.reset();
+				setIsOk(true);
+				setTimeout(() => {
+					setIsError(false);
+					setIsOk(false);
+				}, 3000);
+			}
 		} catch (error) {
+			setIsError(true);
+			setTimeout(() => {
+				setIsError(false);
+				setIsOk(false);
+			}, 3000);
 			console.log(error);
 		}
 	}, []);
@@ -62,14 +80,24 @@ const ContactForm = () => {
 				<button type="submit" className="buttonFont">
 					Enviar
 				</button>
-				<p>o contactanos directamente: correo@gmail.com</p>
+				<p className="formFooter">
+					o contactanos directamente: casacanto1070@gmail.com
+				</p>
 			</div>
+			<p className="message">
+				{isError
+					? "El correo no pudo enviarse."
+					: isOk
+					? "El correo fue enviado con éxito!"
+					: ""}
+			</p>
 			<style jsx>{`
 				form {
 					display: flex;
 					flex-direction: column;
 					gap: 1rem;
 					width: min(100%, 50rem);
+					position: relative;
 				}
 
 				fieldset {
@@ -117,14 +145,14 @@ const ContactForm = () => {
 					line-height: 2.5em;
 				}
 
-				p {
+				.formFooter {
 					position: relative;
 					color: var(--legend-text);
 					font-size: 1.2rem;
 					width: min(16rem, 48%);
 					font-family: "Roboto";
 				}
-				p::before {
+				.formFooter::before {
 					position: absolute;
 					left: -25%;
 					top: 50%;
@@ -134,6 +162,16 @@ const ContactForm = () => {
 					width: 1px;
 					height: 100%;
 					background-color: var(--legend-text);
+				}
+
+				.message {
+					color: white;
+					text-align: center;
+					font-family: "Roboto";
+					position: absolute;
+					bottom: -3rem;
+					width: 100%;
+					font-size: 1.5rem;
 				}
 
 				@media (max-width: 450px) {
@@ -155,7 +193,7 @@ const ContactForm = () => {
 						font-size: 1.5rem;
 					}
 
-					p::before {
+					.formFooter::before {
 						left: -6%;
 						height: 130%;
 					}

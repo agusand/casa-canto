@@ -1,18 +1,18 @@
 const videosCards = [
 	{
-		title: "Ciclo de Conciertos Casa Canto // Berretinto",
+		title: "Guada y Frida - Stressed Out (Cover en vivo)",
 		image: "/assets/images/videos/video1.webp",
-		href: "https://www.youtube.com/watch?v=VSb-fcngthg",
+		href: "https://youtu.be/Pf1dxXGJXBY",
 	},
 	{
-		title: "Ciclo de Conciertos Casa Canto // Colombatti Trío",
+		title: "Cristina Zazú - I've got you under my skin",
 		image: "/assets/images/videos/video2.webp",
-		href: "https://www.youtube.com/watch?v=jWgvEU5O0ck",
+		href: "https://youtu.be/-gmU60ffIVE",
 	},
 	{
-		title: "Ciclo de Conciertos Casa Canto // TREN",
+		title: "Primavera en la terraza - Día 1 - Casa Canto",
 		image: "/assets/images/videos/video3.webp",
-		href: "https://www.youtube.com/watch?v=FUvDg1OpcQs",
+		href: "https://youtu.be/9V6qsXq54iU",
 	},
 ];
 

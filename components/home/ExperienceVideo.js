@@ -4,7 +4,7 @@ const ExperienceVideo = ({ title, href, image }) => {
 	return (
 		<div>
 			<Link href={href}>
-				<a>
+				<a target="_blank">
 					<figure>
 						<img className="thumbnail" src={image} alt={title} />
 						<img
