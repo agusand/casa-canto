@@ -26,6 +26,11 @@ export default function Home() {
 					width: 100%;
 				}
 			`}</style>
+			<style jsx global>{`
+				html {
+					scroll-behavior: smooth;
+				}
+			`}</style>
 		</div>
 	);
 }

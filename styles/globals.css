@@ -23,7 +23,6 @@ body {
 	margin: 0;
 	z-index: 2;
 	overflow-x: hidden;
-	scroll-behavior: smooth;
 }
 
 main {
