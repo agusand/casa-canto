@@ -18,7 +18,8 @@ const Banner = ({ title, message, slug, page = false }) => {
 			</article>
 			<style jsx>{`
 				section {
-					height: 70vh;
+					height: 75vh;
+					margin-bottom: 5vh;
 				}
 
 				h1 {
@@ -34,7 +35,7 @@ const Banner = ({ title, message, slug, page = false }) => {
 					left: 0;
 					top: 0;
 					width: 100vw;
-					height: 77vh;
+					height: 82vh;
 					z-index: 1;
 					background-repeat: no-repeat;
 					background-position: center;
@@ -56,6 +57,7 @@ const Banner = ({ title, message, slug, page = false }) => {
 					width: 40%;
 					justify-content: space-evenly;
 					z-index: 2;
+					margin-top: 7vh;
 					color: white;
 				}
 

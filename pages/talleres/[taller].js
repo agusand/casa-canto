@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
+import Head from "next/head";
 
 import Banner from "../../components/general/Banner";
 import Modality from "../../components/talleres/Modality";
@@ -26,6 +27,12 @@ const WorkshopPage = () => {
 
 	return (
 		<div>
+			<Head>
+				<title>
+					Casa Canto
+					{currentWorkshop?.title ? ` - ${currentWorkshop?.title}` : ""}
+				</title>
+			</Head>
 			<Banner
 				title={currentWorkshop?.title}
 				message={`Hola ${currentWorkshop?.title}`}
@@ -36,6 +43,9 @@ const WorkshopPage = () => {
 			<style jsx>{`
 				div {
 					width: 100%;
+				}
+				html {
+					scroll-behavior: unset;
 				}
 			`}</style>
 		</div>

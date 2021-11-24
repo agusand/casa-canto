@@ -8,7 +8,7 @@ const AppLayout = ({ children }) => {
 	return (
 		<>
 			<Head>
-				<title>Casa Canto - Talleres</title>
+				<title>Casa Canto</title>
 				<meta name="description" content="Casa Canto - Talleres" />
 				<link
 					rel="apple-touch-icon"

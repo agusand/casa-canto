@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import FeatureCard from "../../components/home/FeatureCard";
 
 import aboutUs from "../../public/assets/data/aboutUs.js";
@@ -5,6 +7,9 @@ import aboutUs from "../../public/assets/data/aboutUs.js";
 export default function AboutUs() {
 	return (
 		<div>
+			<Head>
+				<title>Casa Canto - Nosotros</title>
+			</Head>
 			<div className="headerBackground"></div>
 			<section>
 				<article>
@@ -18,12 +23,16 @@ export default function AboutUs() {
 				</article>
 			</section>
 			<style jsx>{`
+				* {
+					scroll-behavior: unset;
+				}
 				div {
 					width: 100%;
 				}
 
 				section {
 					background: var(--por-que-casa-canto-grey-background);
+					margin-top: 7vh;
 				}
 				article {
 					display: flex;

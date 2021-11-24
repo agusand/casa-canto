@@ -27,7 +27,7 @@ const TeacherCard = ({ title, subtitle, text, image }) => {
 					flex-direction: column;
 					justify-content: space-between;
 					gap: 0.5rem;
-					margin: 0 1.5rem;
+					margin: 2rem 1.5rem;
 				}
 
 				figure {

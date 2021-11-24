@@ -1,7 +1,29 @@
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+
 import BurguerMenu from "./BurguerMenu";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
 const Header = () => {
+	const [isInTop, setIsInTop] = useState(true);
+
+	const { pathname } = useRouter();
+
+	useEffect(() => {
+		const setIfIsInTop = (event) => {
+			if (event.target.body.getBoundingClientRect().top < -20) {
+				setIsInTop(true);
+			} else if (isInTop) {
+				setIsInTop(false);
+			}
+		};
+
+		window.addEventListener("scroll", setIfIsInTop);
+
+		return () => {
+			window.removeEventListener("scroll", setIfIsInTop);
+		};
+	}, [isInTop, pathname]);
 	return (
 		<header>
 			<div>
@@ -11,14 +33,19 @@ const Header = () => {
 			</div>
 			<style jsx>{`
 				header {
-					position: relative;
+					position: fixed;
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					width: 100vw;
 					height: 7vh;
-					background: transparent;
+					background: ${pathname != "/nosotros"
+						? isInTop
+							? "black"
+							: "transparent"
+						: "black"};
 					z-index: 5;
+					transition: background 0.3s;
 				}
 
 				div {
