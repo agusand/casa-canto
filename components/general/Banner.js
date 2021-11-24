@@ -81,6 +81,10 @@ const Banner = ({ title, message, slug, page = false }) => {
 						width: 100%;
 					}
 
+					div {
+						margin-top: 0;
+					}
+
 					.title {
 						font-size: 2rem;
 					}
