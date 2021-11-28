@@ -32,8 +32,8 @@ const workshopsCards = [
 	{
 		title: "Iniciación Musical para niños",
 		difficult: "Nivel: Básico/Intermedio/Avanzado",
-		image: "/assets/images/workshops/taller-de-bateria-y-percusion.webp",
-		slug: "iniciacion-musical-para-niños",
+		image: "/assets/images/workshops/taller-niños.webp",
+		slug: "taller-niños",
 	},
 ];
 

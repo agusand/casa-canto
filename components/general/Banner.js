@@ -19,7 +19,6 @@ const Banner = ({ title, message, slug, page = false }) => {
 			<style jsx>{`
 				section {
 					height: 75vh;
-					margin-bottom: 5vh;
 				}
 
 				h1 {

@@ -1,4 +1,6 @@
-const ModalityCard = ({ mode, level, frecuency }) => {
+import Link from "next/link";
+
+const ModalityCard = ({ mode, level, frecuency, message }) => {
 	return (
 		<div className="card">
 			<div className="container">
@@ -16,9 +18,15 @@ const ModalityCard = ({ mode, level, frecuency }) => {
 						Presencial/Virtual
 					</h4>
 				</div>
-				<a>
-					<button>Consultar</button>
-				</a>
+				<Link
+					href={`https://api.whatsapp.com/send?text=${
+						message || ""
+					}&phone=+5493513403843`}
+				>
+					<a target="_blank">
+						<button className="buttonFont">Consultar</button>
+					</a>
+				</Link>
 			</div>
 			<style jsx>{`
 				.card {

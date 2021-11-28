@@ -1,6 +1,6 @@
 import ModalityCard from "./ModalityCard";
 
-const Modality = () => {
+const Modality = ({ taller }) => {
 	return (
 		<section>
 			<article>
@@ -8,13 +8,15 @@ const Modality = () => {
 				<div>
 					<ModalityCard
 						mode="Grupal"
-						level="Principiante- Intermedio-Avanzado"
+						level="Principiante-Intermedio-Avanzado"
 						frecuency="1 vez por semana"
+						message={`Hola! Quisiera más información del ${taller}, modalidad grupal.`}
 					/>
 					<ModalityCard
 						mode="Individual"
-						level="Principiante- Intermedio-Avanzado"
+						level="Principiante-Intermedio-Avanzado"
 						frecuency="1 vez por semana"
+						message={`Hola! Quisiera más información del ${taller}, modalidad individual.`}
 					/>
 				</div>
 			</article>
@@ -38,7 +40,7 @@ const Modality = () => {
 					align-items: center;
 					flex-direction: column;
 					height: 100%;
-					padding: 10vmin 3vh;
+					padding: calc(10vmin + 7vh) 3vh 10vmin;
 				}
 
 				h2 {

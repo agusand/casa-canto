@@ -95,7 +95,7 @@ const Carousel = () => {
 					height: 90%;
 					display: flex;
 					justify-content: space-between;
-					align-items: center;
+					align-items: stretch;
 					transform: translateX(
 						${-((100 / slides.length) * (position - (slides.length - 3) / 2))}%
 					);

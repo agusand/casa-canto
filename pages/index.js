@@ -11,7 +11,7 @@ export default function Home() {
 		<div>
 			<Banner
 				title="Hacé música y sentite como en casa"
-				message="Hola"
+				message="Hola! Quisiera más información de los talleres por favor!"
 				slug="home-banner"
 			/>
 			<Why />

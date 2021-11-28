@@ -35,11 +35,11 @@ const WorkshopPage = () => {
 			</Head>
 			<Banner
 				title={currentWorkshop?.title}
-				message={`Hola ${currentWorkshop?.title}`}
+				message={`Hola! Quisiera más información del ${currentWorkshop?.title}`}
 				slug={currentWorkshop?.slug}
 				page={true}
 			/>
-			<Modality />
+			<Modality taller={currentWorkshop?.title} />
 			<style jsx>{`
 				div {
 					width: 100%;

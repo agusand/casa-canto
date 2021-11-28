@@ -24,7 +24,7 @@ const Why = () => {
 					justify-content: space-around;
 					align-items: center;
 					gap: 12vh;
-					padding: 12vh 0;
+					padding: 17vh 0 12vh;
 				}
 
 				h2 {
