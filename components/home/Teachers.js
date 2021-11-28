@@ -11,7 +11,7 @@ const Teachers = () => {
 				section {
 					background-image: url("/assets/images/background/nuestros-profesores.webp");
 					background-size: cover;
-					min-height: 110vh;
+					min-height: 90vh;
 				}
 
 				article {
@@ -20,8 +20,8 @@ const Teachers = () => {
 					align-items: center;
 					flex-direction: column;
 					height: 100%;
-					padding: 3vh 0;
-					gap: 2rem;
+					padding: 10vh 0;
+					gap: 10vh;
 				}
 
 				h2 {

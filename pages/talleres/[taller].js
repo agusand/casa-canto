@@ -35,7 +35,7 @@ const WorkshopPage = () => {
 			</Head>
 			<Banner
 				title={currentWorkshop?.title}
-				message={`Hola! Quisiera más información del ${currentWorkshop?.title}`}
+				message={`Hola! Quisiera más información de ${currentWorkshop?.title}`}
 				slug={currentWorkshop?.slug}
 				page={true}
 			/>

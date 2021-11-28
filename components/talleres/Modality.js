@@ -10,13 +10,13 @@ const Modality = ({ taller }) => {
 						mode="Grupal"
 						level="Principiante-Intermedio-Avanzado"
 						frecuency="1 vez por semana"
-						message={`Hola! Quisiera más información del ${taller}, modalidad grupal.`}
+						message={`Hola! Quisiera más información de ${taller}, modalidad grupal.`}
 					/>
 					<ModalityCard
 						mode="Individual"
 						level="Principiante-Intermedio-Avanzado"
 						frecuency="1 vez por semana"
-						message={`Hola! Quisiera más información del ${taller}, modalidad individual.`}
+						message={`Hola! Quisiera más información de ${taller}, modalidad individual.`}
 					/>
 				</div>
 			</article>
