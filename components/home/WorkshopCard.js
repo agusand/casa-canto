@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const WorkshopCard = ({ title, difficult, image, slug }) => {
+const WorkshopCard = ({ title, level, image, slug }) => {
 	return (
 		<div className="card">
 			<Link href={`/talleres/${slug}`}>
@@ -10,7 +10,7 @@ const WorkshopCard = ({ title, difficult, image, slug }) => {
 					</figure>
 					<div className="textContainer">
 						<h3 className="subtitle">{title}</h3>
-						<p className="whiteBackgroundTextBody">{difficult}</p>
+						<p className="whiteBackgroundTextBody">{`Niveles: ${level}`}</p>
 					</div>
 				</a>
 			</Link>
@@ -57,7 +57,7 @@ const WorkshopCard = ({ title, difficult, image, slug }) => {
 				}
 
 				p {
-					font-size: 1rem;
+					font-size: 0.9rem;
 				}
 			`}</style>
 		</div>

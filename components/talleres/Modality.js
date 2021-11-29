@@ -1,6 +1,6 @@
 import ModalityCard from "./ModalityCard";
 
-const Modality = ({ taller }) => {
+const Modality = ({ taller, level }) => {
 	return (
 		<section>
 			<article>
@@ -8,13 +8,13 @@ const Modality = ({ taller }) => {
 				<div>
 					<ModalityCard
 						mode="Grupal"
-						level="Principiante-Intermedio-Avanzado"
+						level={level}
 						frecuency="1 vez por semana"
 						message={`Hola! Quisiera más información de ${taller}, modalidad grupal.`}
 					/>
 					<ModalityCard
 						mode="Individual"
-						level="Principiante-Intermedio-Avanzado"
+						level={level}
 						frecuency="1 vez por semana"
 						message={`Hola! Quisiera más información de ${taller}, modalidad individual.`}
 					/>

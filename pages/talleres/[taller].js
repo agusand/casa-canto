@@ -34,12 +34,19 @@ const WorkshopPage = () => {
 				</title>
 			</Head>
 			<Banner
-				title={currentWorkshop?.title}
+				title={
+					currentWorkshop?.slug === "taller-niños"
+						? "Taller de iniciación musical infantil"
+						: currentWorkshop?.title
+				}
 				message={`Hola! Quisiera más información de ${currentWorkshop?.title}`}
 				slug={currentWorkshop?.slug}
 				page={true}
 			/>
-			<Modality taller={currentWorkshop?.title} />
+			<Modality
+				taller={currentWorkshop?.title}
+				level={currentWorkshop?.level}
+			/>
 			<style jsx>{`
 				div {
 					width: 100%;

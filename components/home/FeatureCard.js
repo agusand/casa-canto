@@ -50,6 +50,10 @@ const FeatureCard = ({
 					align-items: flex-start;
 				}
 
+				p {
+					font-size: 1.1rem;
+				}
+
 				@media (max-width: 600px) {
 					div {
 						flex-direction: column;
