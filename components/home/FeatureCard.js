@@ -44,10 +44,11 @@ const FeatureCard = ({
 
 				.text {
 					flex-direction: column;
-					justify-content: space-between;
+					justify-content: center;
 					width: 45%;
 					height: 80%;
 					align-items: flex-start;
+					gap: 2rem;
 				}
 
 				p {
