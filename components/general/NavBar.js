@@ -115,6 +115,10 @@ const NavBar = () => {
 							width: 70%;
 						}
 
+						li:hover {
+							background: none;
+						}
+
 						a {
 							font-size: 2rem;
 						}
