@@ -7,7 +7,7 @@ const data = [
 	},
 	{
 		title: "Eventos junto a los alumnos",
-		text: "Organizamos eventos a lo largo del año como Conciertos, Picnics musicales, Festejo del día de la primavera, Audiciones en teatros, grabaciones, entre otros. Nuestros alumnos suben al escenario para poner en práctica todo lo aprendido en los talleres.",
+		text: "Organizamos eventos a lo largo del año como Conciertos, Picnics musicales, Festejo del día de la primavera, Audiciones en teatros, grabaciones, entre otros en donde nuestros alumnos suben al escenario para poner en práctica todo lo aprendido en los talleres.",
 		image: "assets/images/why/eventos-junto-a-los-alumnos.webp",
 		reverse: true,
 		height: 30,
@@ -20,7 +20,7 @@ const data = [
 	},
 	{
 		title: "Nuestra metodología",
-		text: "Nuestra metodología consiste en actividades grupales e individuales  para cada taller,  orientados según los objetivos del estudiante. Brindamos el asesoramiento y el conocimiento necesario para ayudarlos a incursionar en el mundo de la música.",
+		text: "Ofrecemos talleres grupales e individuales para todos los niveles de formación. En cada clase, los alumnos podrán apropiarse de las técnicas y el conocimientos que requieran según su objetivo.",
 		image: "assets/images/why/nuestra-metodologia.webp",
 		reverse: true,
 		height: 30,
