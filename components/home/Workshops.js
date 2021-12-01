@@ -1,6 +1,6 @@
 import WorkshopCard from "./WorkshopCard";
 
-import workshops from "../../public/assets/data/workshopsCards";
+import workshops from "../../data/workshopsCards";
 
 const Workshops = () => {
 	return (

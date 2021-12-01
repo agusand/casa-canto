@@ -5,7 +5,7 @@ import Head from "next/head";
 import Banner from "../../components/general/Banner";
 import Modality from "../../components/talleres/Modality";
 
-import workshopsCards from "../../public/assets/data/workshopsCards";
+import workshopsCards from "../../data/workshopsCards";
 
 const WorkshopPage = () => {
 	const [currentWorkshop, setCurrentWorkshop] = useState({});

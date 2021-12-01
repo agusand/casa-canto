@@ -1,6 +1,6 @@
 import FeatureCard from "./FeatureCard";
 
-import features from "../../public/assets/data/featuresCards.js";
+import features from "../../data/featuresCards.js";
 
 const Why = () => {
 	return (

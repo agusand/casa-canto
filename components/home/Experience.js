@@ -1,6 +1,6 @@
 import ExperienceVideo from "./ExperienceVideo";
 
-import videosCards from "../../public/assets/data/videosCards";
+import videosCards from "../../data/videosCards";
 
 const Experience = () => {
 	return (

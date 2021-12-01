@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import FeatureCard from "../../components/home/FeatureCard";
 
-import aboutUs from "../../public/assets/data/aboutUs.js";
+import aboutUs from "../../data/aboutUs.js";
 
 export default function AboutUs() {
 	return (

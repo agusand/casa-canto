@@ -14,7 +14,7 @@ const data = [
 	},
 	{
 		title: "Nuestra experiencia",
-		text: "Desde el año 2016, llevamos adelante las clases de canto e instrumentos  que abarcan todas las aristas fundamentales, técnica, ensayos, puesta en escena, grabaciones y ensamblado con otros instrumentos para lograr una formación profesional o por el simple gusto de practicar un  hobby.",
+		text: "Desde el año 2016, dictamos clases de canto e instrumentos, abarcando todas las aristas fundamentales: técnica, ensayos, puesta en escena, grabaciones. Además contamos con ensambles para lograr una formación profesional o por el simple gusto de practicar un  hobby.",
 		image: "assets/images/why/nuestra-experiencia.webp",
 		height: 30,
 	},

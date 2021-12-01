@@ -4,7 +4,7 @@ import TeacherCard from "./TeacherCard";
 
 import { useCarouselContext } from "../../contexts/CarouselContext";
 
-import teachers from "../../public/assets/data/teachersCards.js";
+import teachers from "../../data/teachersCards.js";
 
 const Carousel = () => {
 	const { position, setPosition, slides, setSlides } = useCarouselContext();
