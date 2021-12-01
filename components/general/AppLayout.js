@@ -9,7 +9,10 @@ const AppLayout = ({ children }) => {
 		<>
 			<Head>
 				<title>Casa Canto</title>
-				<meta name="description" content="Casa Canto - Talleres" />
+				<meta
+					name="description"
+					content="Casa Canto te propone una experiencia de aprendizaje al mismo tiempo que te permite pasar un buen momento, dejar de lado el estrés, despejar la mente y sentir la música. Las actividades grupales son una buena oportunidad para conocer gente nueva y relacionarse."
+				/>
 				<link
 					rel="apple-touch-icon"
 					sizes="57x57"
