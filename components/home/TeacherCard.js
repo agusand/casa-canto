@@ -30,6 +30,10 @@ const TeacherCard = ({ title, subtitle, text, image }) => {
 					margin: 2rem 1.5rem;
 				}
 
+				h3 {
+					font-size: 1.1rem;
+				}
+
 				figure {
 					position: relative;
 					top: -2rem;
@@ -59,12 +63,12 @@ const TeacherCard = ({ title, subtitle, text, image }) => {
 
 				.container {
 					position: relative;
-					top: -2rem;
+					margin: -2rem 0 1rem;
 					display: flex;
 					flex-direction: column;
-					gap: 0.5rem;
+					gap: 1rem;
 					flex-grow: 1;
-					justify-content: space-around;
+					justify-content: flex-start;
 				}
 
 				@media (max-width: 700px) {
