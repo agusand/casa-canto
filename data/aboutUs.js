@@ -1,6 +1,6 @@
 const data = [
 	{
-		text: `La profesora de música y canto Jazmín Paz creó Casa Canto -Talleres Musicales- en el año 2016. El compositor Jorge Fandermole asistió a su inauguración dando lugar al inicio de las clases de canto. A lo largo de los años, se han sumado destacados profesionales ampliando la variedad de talleres musicales: guitarra, percusión y batería, ukelele, charango, piano, composición musical, audio perceptivo y foniatría. También se incorporó el Taller de Iniciación musical para niños y niñas. 
+		text: `La profesora de música y canto Jazmín Paz creó <span>Casa Canto -Talleres Musicales-</span> en el año 2016. El compositor Jorge Fandermole asistió a su inauguración dando lugar al inicio de las clases de canto. A lo largo de los años, se han sumado destacados profesionales ampliando la variedad de talleres musicales: guitarra, percusión y batería, ukelele, charango, piano, composición musical, audio perceptivo y foniatría. También se incorporó el Taller de Iniciación musical para niños y niñas. 
 
 		Actualmente es un lugar de encuentro con numerosas propuestas. A las  muestras en escenario, ensayos, grabaciones, eventos musicales, se suman talleres intensivos con músicos destacados.
 

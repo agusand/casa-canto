@@ -13,7 +13,22 @@ const FeatureCard = ({
 			</figure>
 			<div className="text">
 				{title ? <h3 className="subtitle">{title}</h3> : null}
-				<p className="whiteBackgroundTextBody">{text}</p>
+				<p className="whiteBackgroundTextBody">
+					{text.includes("<span>") ? (
+						<>
+							{text.slice(0, text.indexOf("<span>"))}
+							<span>
+								{text.slice(
+									text.indexOf("<span>") + 6,
+									text.indexOf("</span>")
+								)}
+							</span>
+							{text.slice(text.indexOf("</span>") + 7)}
+						</>
+					) : (
+						text
+					)}
+				</p>
 			</div>
 			<style jsx>{`
 				div {
@@ -49,6 +64,10 @@ const FeatureCard = ({
 					height: 80%;
 					align-items: flex-start;
 					gap: 2rem;
+				}
+
+				span {
+					white-space: nowrap;
 				}
 
 				p {

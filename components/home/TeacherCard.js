@@ -41,6 +41,9 @@ const TeacherCard = ({ title, subtitle, text, image }) => {
 
 				.cardSubtitle {
 					color: var(--legend-text);
+					height: 2.5em;
+					line-height: 1.5em;
+					margin-top: 0.5em;
 				}
 
 				.text {

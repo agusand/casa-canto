@@ -20,7 +20,7 @@ const data = [
 	},
 	{
 		title: "Nuestra metodología",
-		text: "Ofrecemos talleres grupales e individuales para todos los niveles de formación. En cada clase, los alumnos podrán apropiarse de las técnicas y el conocimientos que requieran según su objetivo.",
+		text: "Ofrecemos talleres grupales e individuales para todos los niveles de formación. En cada clase, los alumnos podrán apropiarse de las técnicas y el conocimiento que requieran según su objetivo.",
 		image: "assets/images/why/nuestra-metodologia.webp",
 		reverse: true,
 		height: 30,
