@@ -42,7 +42,7 @@ const data = [
 		image: "assets/images/teachers/ernesto-aime.webp",
 	},
 	{
-		title: "Cristián Brizuela",
+		title: "Cristian Brizuela",
 		subtitle: "Profesor de Guitarra y Bajo",
 		text: "Se recibió, en el año 2017, del Nivel Superior de Collegium con el título de Técnico Instrumentista especialidad Guitarra Jazz. Fue escolta de su promoción. Durante dos años, cursó en el Conservatorio Provincial Félix T. Garzón y con profesionales particulares de renombre. Desde el año 2014 y hasta la fecha es un músico activo de la escena cordobesa tocando en distintas agrupaciones de Jazz.",
 		image: "assets/images/teachers/cristian-brizuela.webp",
